@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Eventick</title>
+		<!--css BS-->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+			crossorigin="anonymous" />
+		<!--Font-->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+			rel="stylesheet" />
+		<!--css ex-->
+		<link rel="stylesheet" href="/style/style.css" />
+		<!--awesome font-->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+			integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer" />
+	</head>
+	<body>
+		<!--navbar-->
+		<nav id="navbar" class="navbar navbar-expand-lg shadow-sm p-3 fixed-top">
+			<div class="container-fluid">
+				<a class="navbar-brand fw-bold fs-3" href="#">EVENTICK</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link text-dark fs-5 ms-3" href="#home">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-dark fs-5 ms-3" href="#schedule"
+								>Schedule</a
+							>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-dark fs-5 ms-3" href="#partner"
+								>Partner</a
+							>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-dark fs-5 ms-3" href="loadmore.html"
+								>Ticket</a
+							>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-dark fs-5 ms-3" href="#contact"
+								>Contact</a
+							>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-dark fs-5 ms-3" href="todo.html">Todo</a>
+						</li>
+						<li class="nav-item">
+							<a
+								class="nav-link text-dark fs-5 ms-3 border rounded border-dark p-2"
+								href="login.html"
+								>login</a
+							>
+						</li>
+						<li class="nav-item">
+							<a
+								class="nav-link text-dark fs-5 ms-3 border rounded border-dark p-2 bg-light text-white"
+								href="signup.html"
+								>SignUp</a
+							>
+						</li>
+
+						<!-- ... (other list items) -->
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!--navbar end-->
+
+		<!--hero section-->
+		<section id="home" class="bg-light">
+			<div class="container">
+				<div
+					class="d-flex flex-column justify-content-center vh-100 align-items-center">
+					<header>
+						<h1 class="fw-bold text-center mt-5">
+							Culinary Playland<br />
+							Samarinda
+						</h1>
+						<h4 class="fs-5 my-2 text-center mb-4">
+							Culinary Playland Samarinda, a festival for everyone presented by
+							Seven Promosindo and Project Main, bringing 80 curated culinary
+							brands.
+						</h4>
+					</header>
+					<a href="kelompok.html">
+						<button
+							type="button"
+							class="btn btn-danger fs-6 p-3 mb-5 mt-3 text-bold">
+							Get Ticket
+						</button>
+					</a>
+					<div
+						class="bg-dark bg-opacity-50 text-white py-3 rounded-5 mt-5 shadow p-3">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-4">
+									<div class="form-group text-center">
+										<label for="searchEvent">Search Event</label>
+										<input
+											type="text"
+											class="form-control text-center"
+											id="searchEvent"
+											placeholder="Ketik kata kunci" />
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-group text-center">
+										<label for="place">Tempat</label>
+										<input
+											type="text"
+											class="form-control text-center"
+											id="place"
+											placeholder="Lokasi acara" />
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-group text-center">
+										<label for="time">Waktu</label>
+										<input
+											type="text"
+											class="form-control text-center"
+											id="time"
+											placeholder="Tanggal atau waktu acara" />
+									</div>
+								</div>
+							</div>
+							<div class="text-center mt-3 flex-column d-flex">
+								<button type="button" class="btn btn-primary">Cari</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--hero sectionend-->
+
+		<!--up comming-->
+		<section id="schedule" class="bg-white">
+			<div class="container">
+				<h2 class="text-center my-5">
+					<span class="text-dark"><b>Upcoming Event</b></span>
+				</h2>
+				<div class="row">
+					<div class="col-md-4 mb-4">
+						<div class="card h-100 shadow">
+							<img
+								src="https://darrellfraser.com/wp-content/uploads/2022/10/Darrell-Fraser-Johannesburg-Wedding-Photographer-The-Garden-Venue-1.jpg"
+								class="card-img-top"
+								alt="Wedding Photography" />
+							<div class="card-body d-flex flex-column">
+								<h5 class="card-title">
+									<b>Wedding Photography Competition</b>
+								</h5>
+								<p class="card-text">
+									Kompetisi Fotografi Acara Pernikahan adalah sebuah ajang di
+									mana para fotografer bersaing untuk mengabadikan momen-momen
+									berharga dalam pernikahan.
+								</p>
+								<div class="mt-auto text-center">
+									<button type="button" class="btn btn-success fs-6">
+										Coming Soon
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 mb-4">
+						<div class="card h-100 d-flex flex-column shadow">
+							<img
+								src="https://assets.suaramerdeka.com/crop/0x0:0x0/750x500/webp/photo/2023/04/14/Rose-Blackpink-2656051735.jpg"
+								class="card-img-top"
+								alt="Portrait Photography" />
+							<div class="card-body d-flex flex-column">
+								<h5 class="card-title"><b>Light up the sky film</b></h5>
+								<p class="card-text">
+									Light Up the Sky adalah film dokumenter Amerika Serikat dan
+									Korea Selatan tahun 2020, yang menceritakan kisah girlband
+									Korea Selatan Blackpink dan mengikuti perjalanannya menuju
+									ketenarannya saat ini.
+								</p>
+								<div class="mt-auto text-center">
+									<button type="button" class="btn btn-success fs-6">
+										Coming Soon
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 mb-4">
+						<div class="card h-100 shadow">
+							<img
+								src="https://cdn.idntimes.com/content-images/post/20190121/50196379-335519390375120-6133009263544755122-n-a712344e2cd5770b318e69d6939e0684_600x400.jpg"
+								class="card-img-top"
+								alt="Event Photography" />
+							<div class="card-body d-flex flex-column">
+								<h5 class="card-title">
+									<b>BLACKPINK - Concert in Jakarta</b>
+								</h5>
+								<p class="card-text">
+									Blackpink in Jakarta adalah konser live grup K-pop Blackpink
+									di Indonesia, bagian dari tur dunia mereka, di mana penggemar
+									dapat menyaksikan penampilan langsung Jisoo, Jennie, Rosé, dan
+									Lisa.
+								</p>
+								<div class="mt-auto text-center">
+									<button type="button" class="btn btn-success fs-6">
+										Coming Soon
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 mb-4">
+						<div class="card h-100 shadow">
+							<img
+								src="https://pbs.twimg.com/media/F0zTiYSakAA-JGz.jpg"
+								class="card-img-top"
+								alt="Event Photography" />
+							<div class="card-body d-flex flex-column">
+								<h5 class="card-title">
+									<b>Aceh Culinary Festival</b>
+								</h5>
+								<p class="card-text">
+									Aceh Culinary Festival adalah sebuah acara festival kuliner
+									yang diadakan di provinsi Aceh, Indonesia. Acara ini bertujuan
+									untuk merayakan kekayaan budaya kuliner Aceh yang kaya akan
+									rasa dan tradisi.
+								</p>
+								<div class="mt-auto text-center">
+									<button type="button" class="btn btn-success fs-6">
+										Coming Soon
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 mb-4">
+						<div class="card h-100 shadow">
+							<img
+								src="/image/silat.png"
+								class="card-img-top"
+								alt="Event Photography" />
+							<div class="card-body d-flex flex-column">
+								<h5 class="card-title">
+									<b>Kejuaraan Pencak Silat - Memperebutkan Piaya Menpora</b>
+								</h5>
+								<p class="card-text">
+									Kejuaraan Pencak Silat "Memperebutkan Piala Menpora" adalah
+									kompetisi Pencak Silat yang bertujuan mempromosikan dan
+									mempertahankan warisan budaya serta keahlian bela diri
+									Indonesia.
+								</p>
+								<div class="mt-auto text-center">
+									<button type="button" class="btn btn-success fs-6">
+										Coming Soon
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 mb-4">
+						<div class="card h-100 shadow">
+							<img
+								src="https://www.rukita.co/stories/wp-content/uploads/2022/06/image_2022-06-09_171101285.png"
+								class="card-img-top"
+								alt="Event Photography" />
+							<div class="card-body d-flex flex-column">
+								<h5 class="card-title">
+									<b>TULUS - Tur Manusia 2023</b>
+								</h5>
+								<p class="card-text">
+									Tur Manusia merupakan konser tur oleh penyanyi dan penulis
+									lagu Tulus dalam merayakan sebelas tahun berkarya serta
+									mendukung album studio keempat yang berjudul sama.
+								</p>
+								<div class="mt-auto text-center">
+									<button type="button" class="btn btn-success fs-6">
+										Coming Soon
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="d-flex justify-content-center align-items-center">
+					<div class="mt-auto text-center">
+						<a href="loadmore.html">
+							<button type="button" class="btn btn-danger mt-4 p-2 fs-6 mb-5">
+								Loadmore
+							</button>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--upcoming end-->
+		<!--partner-->
+		<section id="partner">
+			<div class="container">
+				<div class="title my-5 mb-2 text-center text-dark">
+					<h1><b>Join These Brands</b></h1>
+					<p class="text-secondary mb-5">
+						We've had the pleasure of working with industry-defining brands.
+						These are just some of them.
+					</p>
+				</div>
+				<div class="row">
+					<div class="col-12 col-md-6 col-lg-4 items-center p-3">
+						<div
+							class="box d-flex bg-dark border border-dark rounded-pill p-3 gap-3 align-items-center shadow">
+							<div class="logo">
+								<i class="fab fa-google"></i>
+							</div>
+							<span>Google</span>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4 p-3">
+						<div
+							class="box d-flex bg-success border border-dark rounded-pill p-3 gap-3 align-items-center shadow">
+							<div class="logo">
+								<i class="fab fa-spotify"></i>
+							</div>
+							<span>Spotify</span>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4 p-3">
+						<div
+							class="box d-flex bg-primary border border-dark rounded-pill p-3 gap-3 align-items-center shadow">
+							<div class="logo">
+								<i class="fab fa-linkedin"></i>
+							</div>
+							<span>LinkedIn</span>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4 p-3">
+						<div
+							class="box d-flex bg-danger border border-dark rounded-pill p-3 gap-3 align-items-center shadow">
+							<div class="logo">
+								<i class="fab fa-youtube"></i>
+							</div>
+							<span>YouTube</span>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4 p-3">
+						<div
+							class="box d-flex bg-light border border-dark rounded-pill p-3 gap-3 align-items-center shadow">
+							<div class="logo">
+								<i class="fas fa-code"></i>
+							</div>
+							<span>Dicoding</span>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4 p-3">
+						<div
+							class="box d-flex bg-info border border-dark rounded-pill p-3 gap-3 align-items-center shadow">
+							<div class="logo">
+								<i class="fab fa-paypal"></i>
+							</div>
+							<span>PayPal</span>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4 p-3">
+						<div
+							class="box d-flex bg-secondary border border-dark rounded-pill p-3 gap-3 align-items-center shadow">
+							<div class="logo">
+								<i class="fab fa-apple"></i>
+							</div>
+							<span>Apple</span>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4 p-3">
+						<div
+							class="box d-flex bg-light border border-dark rounded-pill p-3 gap-3 align-items-center shadow">
+							<div class="logo">
+								<i class="fab fa-unity"></i>
+							</div>
+							<span>Unity</span>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4 p-3 mb-5">
+						<div
+							class="box d-flex bg-warning border border-dark rounded-pill p-3 gap-3 align-items-center shadow">
+							<div class="logo">
+								<i class="fab fa-microsoft"></i>
+							</div>
+							<span>Microsoft</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--partner-->
+
+		<!--cintact-->
+		<div id="contact">
+			<section class="py-5 bg-white">
+				<div class="container">
+					<h2 class="text-center my-5">
+						<span class=""><b>Contact</b></span> Us
+					</h2>
+					<div class="row justify-content-center">
+						<div class="col-4">
+							<div class="bg-light text-light rounded p-3 mb-3">
+								<h3>Contact Us</h3>
+								<p class="pr-5">
+									Kami senang mendengar dari Anda. Jika Anda memiliki
+									pertanyaan, saran, atau ingin berbagi pengalaman dengan kami,
+									jangan ragu untuk menghubungi kami. Tim kami siap membantu
+									Anda.
+								</p>
+							</div>
+							<table class="table-bordered w-100">
+								<tbody>
+									<tr>
+										<td class="p-2"><h2>Location</h2></td>
+									</tr>
+									<tr>
+										<td class="p-1"><h4>Kantor:</h4></td>
+									</tr>
+									<tr>
+										<td class="p-1"><p>Jl.Imam Bonjol</p></td>
+									</tr>
+									<tr>
+										<td class="p-1"><p>Semarang, Jawa Tengah</p></td>
+									</tr>
+									<tr>
+										<td class="p-1"><p>Indonesia</p></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<form class="col-4">
+							<div class="form-group">
+								<label for="exampleInputNama1">Nama</label>
+								<input
+									type="text"
+									class="form-control"
+									id="exampleInputNama1"
+									aria-describedby="namaHelp" />
+								<small id="namaHelp" class="form-text text-muted"
+									>Nama Harus Memiliki Minimal 5 Huruf</small
+								>
+							</div>
+							<div class="form-group">
+								<label for="exampleInputEmail1">Email address</label>
+								<input
+									type="email"
+									class="form-control"
+									id="exampleInputEmail1"
+									aria-describedby="emailHelp" />
+								<small id="emailHelp" class="form-text text-muted"
+									>We'll never share your email with anyone else.</small
+								>
+							</div>
+							<div class="form-group">
+								<label for="exampleInputNoTelp1">No Telp</label>
+								<input
+									type="tel"
+									class="form-control"
+									id="exampleInputNoTelp1" />
+							</div>
+							<div class="form-group">
+								<label for="exampleInputNoTelp1">Pesan</label>
+								<textarea
+									class="form-control"
+									aria-label="With textarea"></textarea>
+							</div>
+							<div class="form-group form-check">
+								<input
+									type="checkbox"
+									class="form-check-input"
+									id="exampleCheck1" />
+								<label class="form-check-label" for="exampleCheck1"
+									>Check me out</label
+								>
+							</div>
+							<button type="submit" class="btn btn-dark">Kirim Pesan</button>
+						</form>
+					</div>
+				</div>
+			</section>
+		</div>
+		<!--contactend-->
+		<!--footer-->
+		<footer class="bg-dark text-white">
+			<div class="container py-5">
+				<div class="row">
+					<div class="col-md-4">
+						<h5>Contact Us</h5>
+						<ul class="list-unstyled">
+							<li>Address: JL. Peres no.78, Semarang</li>
+							<li>Phone: +62 812-3456-7890</li>
+							<li>Email: kelompok_10@gmail.com</li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<h5>About Us</h5>
+						<ul class="list-unstyled">
+							<li><a href="#">Our Story</a></li>
+							<li><a href="#">Our Team</a></li>
+							<li><a href="#">Testimonials</a></li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<h5>Follow Us</h5>
+						<ul class="list-unstyled">
+							<li><a href="#">Facebook</a></li>
+							<li><a href="#">Twitter</a></li>
+							<li><a href="#">Instagram</a></li>
+						</ul>
+					</div>
+				</div>
+				<hr />
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<p>
+							&copy; 2023 Kelompok 10 Eventick Business. All rights reserved.
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!--footer end-->
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+			crossorigin="anonymous"></script>
+	</body>
+</html>

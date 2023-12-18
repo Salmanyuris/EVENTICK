@@ -1,0 +1,67 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.bg-light {
+    background-color: #242565 !important;
+    /* background-color: navy !important; */
+    /* background: linear-gradient(to bottom,black, #242565 , #908989, white); */
+    color: white;
+    scrollbar-highlight-color:transparent  !important ;
+}
+.bg-white {
+    background-color: rgba(145, 145, 165, 0.259) !important;
+    padding-top: 5px;
+}
+nav {
+    background-color: white;
+    font-weight: bold;
+}
+button {
+    align-items: center;
+}
+#schedule .loadmore {
+    list-style-type: none;
+}
+#schedule .loadmore li a {
+    text-decoration: none;
+    color: white;
+    border: none;
+}
+#schedule .loadmore button {
+    border: none;
+}
+.logo {
+    color: white;
+}
+#partner {
+    color:white;
+}
+#ticket .back {
+    list-style-type: none;
+    display: flex;
+}
+#ticket .back a{
+   text-decoration : none;
+   color: black;
+}
+div .back a {
+    text-decoration : none;
+    list-style-type: none;
+    color: white;
+}
+.mask-custom-1 {
+    backdrop-filter: blur(15px);
+    background-color: rgba(255, 255, 255, .2);
+    border-radius: 3em;
+    border: 2px solid rgba(255, 255, 255, .1);
+    background-clip: padding-box;
+    box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+  }
+  
+  
+  @media (max-width: 767px) {
+    .bg-image {
+      height: 1400px !important;
+    }
+  }
+

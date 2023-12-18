@@ -1,0 +1,25 @@
+body {
+    background: linear-gradient(to right,black, #242565 , #908989, white);
+    scrollbar-highlight-color:transparent  !important ;
+    color: #fff;
+}
+.login-container {
+    margin-top: 100px;
+}
+
+.login-form {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+.login .back{
+    list-style-type: none;
+    display: flex;
+}
+.login .back a {
+    text-decoration : none;
+    color: white;
+}
+.login {
+    font-family: 'Poppins', sans-serif;;
+}

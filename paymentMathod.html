@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Payment Method</title>
+		<!-- Bootstrap CSS -->
+		<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
+		<!--css BS-->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+			crossorigin="anonymous" />
+		<!--Font-->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+			rel="stylesheet" />
+		<!--css ex-->
+		<link rel="stylesheet" href="/style/style.css" />
+		<link rel="stylesheet" href="/style/style2.css" />
+		<!--awesome font-->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+			integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer" />
+	</head>
+	<body>
+		<div class="login">
+			<h2 class="text-center d-flex my-3 mb-3"></h2>
+			<div class="back">
+				<span class="text-dark fs-5 p-3 text-center"
+					><a href="loadmore.html"><b>< Back</b></a></span
+				>
+			</div>
+		</div>
+		<section id="payment">
+			<div class="container">
+				<div class="title text-center mb-4 mt-5">
+					<h1 class="fw-bold">Payment</h1>
+				</div>
+				<div class="row">
+					<div class="col-6 col-lg-4">
+						<div class="card">
+							<div class="card-body bg-light rounded fixed-mid shadow-5">
+								<form>
+									<div class="form-group mt-4 border rounded-5 bg-dark p-2">
+										<div class="custom-control custom-radio">
+											<input
+												type="radio"
+												id="creditCard"
+												name="paymentOption"
+												class="custom-control-input" />
+											<label
+												class="custom-control-label text-white"
+												for="creditCard"
+												>Credit Card</label
+											>
+										</div>
+									</div>
+
+									<div class="form-group mt-3 border rounded-5 bg-dark p-2">
+										<div class="custom-control custom-radio">
+											<input
+												type="radio"
+												id="paypal"
+												name="paymentOption"
+												class="custom-control-input" />
+											<label
+												class="custom-control-label text-white"
+												for="paypal"
+												>PayPal</label
+											>
+										</div>
+									</div>
+
+									<div class="form-group mt-3 border rounded-5 bg-dark p-2">
+										<div class="custom-control custom-radio">
+											<input
+												type="radio"
+												id="bankTransfer"
+												name="paymentOption"
+												class="custom-control-input" />
+											<label
+												class="custom-control-label text-white"
+												for="bankTransfer"
+												>Bank Transfer</label
+											>
+										</div>
+									</div>
+									<div class="form-group mt-3 border rounded-5 bg-dark p-2">
+										<div class="custom-control custom-radio">
+											<input
+												type="radio"
+												id="eWallet"
+												name="paymentOption"
+												class="custom-control-input" />
+											<label
+												class="custom-control-label text-white"
+												for="eWallet"
+												>E-Wallet</label
+											>
+										</div>
+									</div>
+									<div class="form-group mt-3 border rounded-5 bg-dark p-2">
+										<div class="custom-control custom-radio text-white">
+											<input
+												type="radio"
+												id="qris"
+												name="paymentOption"
+												class="custom-control-input" />
+											<label class="custom-control-label" for="qris"
+												>QRIS</label
+											>
+										</div>
+									</div>
+									<button
+										type="submit"
+										class="btn btn-primary mt-3 border rounded-5 p-2">
+										Confirm
+									</button>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-lg-8">
+						<div class="card bg-light mb-5 shadow border">
+							<h4 class="text-center mt-2 fw-bold">Event Details</h4>
+							<img
+								src="https://www.rukita.co/stories/wp-content/uploads/2022/06/image_2022-06-09_171101285.png"
+								class="m-auto rounded-5 mt-4 img-fluid" />
+							<div class="card-body">
+								<p class="fw-bold text-center">
+									TULUS - Tur Manusia 2023 Day-1<br />
+									ICE BSD city 5 dan 6
+								</p>
+								<form>
+									<!-- Add more payment options as needed -->
+
+									<div class="mt-5">
+										<h4>Payment Details</h4>
+
+										<div class="form-group mb-3">
+											<label for="cardHolderName">Name</label>
+											<input
+												type="text"
+												class="form-control"
+												id="cardHolderName"
+												placeholder="Enter your name" />
+										</div>
+
+										<div class="form-row">
+											<div class="form-group col-md-6 mb-3">
+												<label for="expiryDate">Date</label>
+												<input
+													type="date"
+													class="form-control"
+													id="expiryDate"
+													placeholder="MM/YY" />
+											</div>
+											<div class="form-group col-md-6 mb-3">
+												<label for="seatNumber">Number Seat</label>
+												<input
+													type="text"
+													class="form-control"
+													id="seatNumber"
+													placeholder="Enter number seat" />
+											</div>
+										</div>
+
+										<!-- Add more fields for other payment methods -->
+									</div>
+
+									<a href="completed.html">
+										<button type="submit" class="btn btn-primary mt-3">
+											Pay Now
+										</button>
+									</a>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Bootstrap JS and dependencies -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>
